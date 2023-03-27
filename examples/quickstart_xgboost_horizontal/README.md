@@ -1,5 +1,7 @@
 # Federated XGBoost in Horizontal Setting (PyTorch)
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adap/flower/blob/main/examples/quickstart_xgboost_horizontal/code_horizontal.ipynb) (or open the [Jupyter Notebook](https://github.com/adap/flower/blob/main/examples/quickstart_xgboost_horizontal/code_horizontal.ipynb))
+
 This example demonstrates a federated XGBoost using Flower with PyTorch. This is a novel method to conduct federated XGBoost in the horizontal setting. It differs from the previous methods in the following ways:
 
 - We aggregate and conduct federated learning on client tree’s prediction outcomes by sending clients' built XGBoost trees to the server and then sharing to the clients.
@@ -9,22 +11,8 @@ This example demonstrates a federated XGBoost using Flower with PyTorch. This is
 
 ## Project Setup
 
-This implementation can be easily run in Google Colab with the following file structure in Google Drive, * denotes folder:
-
-```shell
-—————————————————————————————————————————————————————————————————————
-My Drive
-  XGBoost*
-      |----- code.ipynb
-      dataset*
-          binary_classifications*
-              |----- dataset file 1
-              |----- dataset file 2
-          regression*
-              |----- dataset file 1
-              |----- dataset file 2 
-—————————————————————————————————————————————————————————————————————
-```
+This implementation can be easily run in Google Colab with the button at the top of the README or as a standalone Jupyter notebook,
+it will automatically download and extract the example data inside a `dataset` folder and `binary_classification` and `regression` sub-folders.
 
 ## Datasets
 
